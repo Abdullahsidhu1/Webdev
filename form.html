@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f4f8;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .signup-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .signup-container h2 {
+            margin-bottom: 20px;
+            color: #333333;
+        }
+        .signup-container input,
+        .signup-container select,
+        .signup-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .signup-container button {
+            background-color: #4CAF50;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .signup-container button:hover {
+            background-color: #45a049;
+        }
+        .file-upload {
+            text-align: left;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Create Account</h2>
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="New Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input type="number" placeholder="Age" required>
+            <select required>
+                <option value="">Select State</option>
+                <option value="state1">Punjab</option>
+                <option value="state2">Sindh</option>
+            </select>
+            <select required>
+                <option value="">Select City</option>
+                <option value="city1">Lahore</option>
+                <option value="city2">Multan</option>
+            </select>
+            <div class="file-upload">
+                <label for="file-upload">Upload Photo:</label>
+                <input type="file" id="file-upload">
+            </div>
+            <button type="submit">Register</button>
+            <button type="button">Login</button>
+        </form>
+    </div>
+</body>
+</html>
