@@ -33,7 +33,6 @@
 
 <div class="container-fluid">
     <div class="row">
-        <!-- Sidebar -->
         <nav class="col-md-3 col-lg-2 d-md-block sidebar p-3">
             <h4 class="text-center">Admin Panel</h4>
             <hr>
@@ -47,26 +46,22 @@
             <a href="#" class="text-danger">Logout</a>
         </nav>
 
-        <!-- Main Content -->
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <h2 class="mt-4">Dashboard</h2>
 
             <div class="row mt-4">
-                <!-- Card 1 -->
                 <div class="col-md-4">
                     <div class="card shadow-sm p-3">
-                        <h5>Total Orders</h5>
-                        <p class="fs-4">120</p>
+                        <h5>Total Brand</h5>
+                        <p class="fs-4">{{ $totalBrands }}</p>
                     </div>
                 </div>
-                <!-- Card 2 -->
                 <div class="col-md-4">
                     <div class="card shadow-sm p-3">
                         <h5>Total Products</h5>
-                        <p class="fs-4">500</p>
+                        <p class="fs-4">{{ $totalProducts }}</p>
                     </div>
                 </div>
-                <!-- Card 3 -->
                 <div class="col-md-4">
                     <div class="card shadow-sm p-3">
                         <h5>Total Customers</h5>
@@ -74,8 +69,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Orders Table -->
             <div class="mt-5">
                 <h4>Recent Orders</h4>
                 <table class="table table-bordered mt-3">
@@ -91,19 +84,19 @@
                         <tr>
                             <td>#1001</td>
                             <td>John Doe</td>
-                            <td>$150</td>
+                            <td>150</td>
                             <td><span class="badge bg-success">Completed</span></td>
                         </tr>
                         <tr>
                             <td>#1002</td>
                             <td>Jane Smith</td>
-                            <td>$90</td>
+                            <td>90</td>
                             <td><span class="badge bg-warning">Pending</span></td>
                         </tr>
                         <tr>
                             <td>#1003</td>
                             <td>David Brown</td>
-                            <td>$200</td>
+                            <td>200</td>
                             <td><span class="badge bg-danger">Cancelled</span></td>
                         </tr>
                     </tbody>

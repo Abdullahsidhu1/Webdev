@@ -40,7 +40,6 @@
 
 <div class="container-fluid">
     <div class="row">
-        <!-- Sidebar -->
         <nav class="col-md-3 col-lg-2 d-md-block sidebar p-3">
             <h4 class="text-center">Admin Panel</h4>
             <hr>
@@ -66,8 +65,6 @@
                             <label for="name" class="form-label">Brand Name</label>
                             <input type="text" class="form-control" id="name" name="name" value="{{ old('name', $brand->name) }}" required>
                         </div>
-            
-                        <!-- Submit Button -->
                         <button type="submit" class="btn btn-primary">Update Brand</button>
                     </form>
                 </div>

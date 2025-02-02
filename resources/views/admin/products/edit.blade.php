@@ -40,7 +40,6 @@
 
 <div class="container-fluid">
     <div class="row">
-        <!-- Sidebar -->
         <nav class="col-md-3 col-lg-2 d-md-block sidebar p-3">
             <h4 class="text-center">Admin Panel</h4>
             <hr>
@@ -53,8 +52,6 @@
             <a href="#">Settings</a>
             <a href="#" class="text-danger">Logout</a>
         </nav>
-
-        <!-- Main Content -->
         <main class="col-md-10 ms-sm-auto col-lg-10">
 
             <div class="container mt-5">

@@ -41,7 +41,6 @@
 
 <div class="container-fluid">
     <div class="row">
-        <!-- Sidebar -->
         <nav class="col-md-3 col-lg-2 d-md-block sidebar p-3">
             <h4 class="text-center">Admin Panel</h4>
             <hr>

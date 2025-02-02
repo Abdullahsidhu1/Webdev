@@ -1,20 +1,13 @@
 <?php
 
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
-
 Route::get('/', [HomeController::class, 'home'])->name('brand.index');
-
-
-Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard');
-});
+Route::get('/admin/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 
 
 Route::get('/admin/brand/index', [BrandController::class, 'index'])->name('brand.index');

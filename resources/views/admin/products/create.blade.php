@@ -40,7 +40,6 @@
 
 <div class="container-fluid">
     <div class="row">
-        <!-- Sidebar -->
         <nav class="col-md-3 col-lg-2 d-md-block sidebar p-3">
             <h4 class="text-center">Admin Panel</h4>
             <hr>
@@ -53,8 +52,6 @@
             <a href="#">Settings</a>
             <a href="#" class="text-danger">Logout</a>
         </nav>
-
-        <!-- Main Content -->
         <main class="col-md-10 ms-sm-auto col-lg-10">
             <div class="container mt-5">
                 <div class="form-container mx-auto">
@@ -95,27 +92,14 @@
 
                             </div>
                         </div>
-
-                        
-                    
-                       
-            
-                        <!-- Product Description -->
                         <div class="mb-3">
                             <label for="description" class="form-label">Description</label>
                             <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                         </div>
-
-                        <!-- Product Brand -->
-                        
-            
-                        <!-- Product Image -->
                         <div class="mb-3">
                             <label for="image" class="form-label">Product Image</label>
                             <input type="file" class="form-control" id="image" name="image" required>
                         </div>
-            
-                        <!-- Submit Button -->
                         <button type="submit" class="btn btn-primary">Add Product</button>
                     </form>
                 </div>
