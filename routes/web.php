@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
@@ -8,7 +9,7 @@ Route::get('/', function () {
     return view('frontend.index');
 });
 
-Route::get('/', [ProductController::class, 'home'])->name('brand.index');
+Route::get('/', [HomeController::class, 'home'])->name('brand.index');
 
 
 Route::get('/admin/dashboard', function () {
