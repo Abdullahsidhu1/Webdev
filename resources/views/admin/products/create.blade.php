@@ -77,7 +77,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="mb-3">
-                                        <label for="price" class="form-label">Price ($)</label>
+                                        <label for="price" class="form-label">Price (PKR)</label>
                                         <input type="number" step="0.01" class="form-control" id="price" name="price" required>
                                     </div>
                                 </div>

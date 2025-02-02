@@ -7,9 +7,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
             height: 100vh;
+            width: 234px;
             background-color: #343a40;
             color: white;
+            padding-top: 20px;
+            z-index: 1000;
+            overflow-y: auto;
         }
         .sidebar a {
             color: white;
@@ -30,13 +37,23 @@
         .btn-group {
             margin-left: 10px;
         }
+        
+        main {
+            margin-left: 250px; 
+            padding-top: 20px;
+            overflow-y: auto;
+            height: 100vh;
+        }
+       
+        table {
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
 
 <div class="container-fluid">
     <div class="row">
-        <!-- Sidebar -->
         <nav class="col-md-3 col-lg-2 d-md-block sidebar p-3">
             <h4 class="text-center">Admin Panel</h4>
             <hr>
@@ -49,8 +66,6 @@
             <a href="#">Settings</a>
             <a href="#" class="text-danger">Logout</a>
         </nav>
-
-        <!-- Main Content -->
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <div class="container mt-5">
                 @if(session('success'))
@@ -59,13 +74,9 @@
                 </div>
             @endif
                 <h3 class="text-center">All Products</h3>
-            
-                <!-- Create Product Button -->
                 <div class="text-end mb-3">
                     <a href="{{ route('product.create') }}" class="btn btn-primary">Create Product</a>
                 </div>
-            
-                <!-- Product Table -->
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
@@ -87,10 +98,9 @@
                                 <tr>
                                     <td>{{ $product->id }}</td>
                                     <td>{{ $product->name }}</td>
-                                    <td>${{ number_format($product->price, 2) }}</td>
+                                    <td>{{ number_format($product->price, 2) }}</td>
                                     <td>{{ $product->brand->name }}</td>
                                     <td>
-                                        <!-- Display product image -->
                                         <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" width="100" height="100" class="img-fluid">
                                     </td>
                                     <td>
